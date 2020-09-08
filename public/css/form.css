@@ -1,0 +1,69 @@
+.form-heading {
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid yellowgreen;
+    padding: 2em;
+    margin: 0 32em;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.form > label {
+    margin: 0.5em;
+}
+
+.form input {
+    background: transparent;
+    border: 1px solid black;
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.form #submit {
+
+    background-color: black;
+
+    background-color: #239d60;
+
+    color: white;
+    cursor: pointer;
+}
+
+.form #submit:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.new-account > h4 {
+    text-align: center;
+}
+
+
+
+.redirect > h4 {
+    text-align: center;
+}
+
+
+.redirect > h4 > a {
+
+    text-decoration: none;
+    color: black;
+}
+
+
+.new-account > h4 > a:hover {
+    text-decoration: underline;
+}
+
+.redirect > h4 > a:hover {
+    text-decoration: underline;
+}

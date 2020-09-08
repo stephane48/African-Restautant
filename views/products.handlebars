@@ -1,0 +1,50 @@
+
+<div class="product-container">
+    <div class="heading product-heading">
+
+        <h2>Our meals package</h2>
+    </div>
+    <div class="product-listing">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+
+        <h2></h2>
+    </div>
+    <div class="product-listing">
+        <p class="product-section-heading"></p>
+        <ul>
+            <li id="current-subcategory"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+
+        </ul>
+    </div>
+    <div class="product-grid grid-three-items">
+    {{#each products}}
+        <div class="product-card">
+            <img src="{{this.image}}" alt="" class="grid-image product-image">
+            <div class="product-info">
+                <p>
+                    <span>{{this.name}}</span> <br>
+                    <span class="product-price">CAD {{this.price}}</span>
+
+
+                    {{#if this.isBestSeller }}
+                        <span class="bestseller"></span>
+                    {{/if}}
+
+                </p>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</div>

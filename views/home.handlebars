@@ -1,0 +1,43 @@
+<div id="promotions-banner">
+    <img src="/images/sale_v3.jpg" alt="" class="sale">
+</div>
+
+<div class="categories">
+    <div class="heading">
+        <h2>No cooking, just eating.</h2>
+    </div>
+    <div class="grid-container">
+    {{#each categories}}
+        <div class="grid-item">
+            <h3 class="category-description">{{this.description}}</h2>
+            <img src="{{this.image}}" alt="" class="grid-image category-image">
+            <h4 class="category-name"><a href="/products">{{this.name}} >></a></h3>
+        </div>   
+    {{/each}}
+    </div>
+</div>
+
+<div class="bestsellers bg-grey">
+    <div class="heading">
+        <h2>Our chefs are making these right now!</h2>
+    </div>
+    <div class="grid-container">
+    {{#each bestSeller}}
+        <div class="bestseller-card grid-item">
+            <img src="{{this.image}}" alt="" class="grid-image bestseller-image">
+
+            <div class="bestseller-name">
+                <h4>{{this.name}}</h4>
+            </div>  
+
+            <div class="product-info">
+                <p>
+                    <span>{{this.name}}</span> <br>
+                    <span class="product-price">CAD {{this.price}}</span>
+                </p>
+            </div>
+
+        </div> 
+    {{/each}}
+    </div>
+</div>

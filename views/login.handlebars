@@ -1,0 +1,48 @@
+<style>
+    .errMessage{
+    color: crimson;
+    text-align: left;
+    padding-left: 18px;
+
+ }
+</style>
+
+<div class="form-heading heading">
+
+    <h2>Welcome Back</h2>
+
+    <h2>Sign in</h2>
+
+</div>
+<div class="form-container">
+    <form class="form" action="/login" method="POST">
+        <label for="email">
+            Email
+            <input type="email" name="email" id="email" maxlength="120" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="stephanekamdem@email.com">
+        </label>
+        
+        {{#each errorMessages}}
+            <div class = "errMessage" >{{this}}</div>
+            {{/each}}
+        
+        <label for="password">
+            Password
+            <input type="password" name="password" id="password" placeholder="At least 6 characters">
+        </label>
+        
+        {{#each errorMessages}}
+            <div class = "errMessage" >{{this}}</div>
+            {{/each}}
+            
+
+        <label for="">
+            <input type="submit" value="Login" id="submit">
+        </label>
+
+    </form>
+</div>
+
+<div class="redirect">
+
+    <h4><a href="/register">Don't have an account yet? Register now</a></h4>
+</div>

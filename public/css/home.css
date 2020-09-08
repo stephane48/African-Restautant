@@ -1,0 +1,71 @@
+@import url("/css/grid.css");
+
+#promotions-banner > img {
+    width: 100%;
+}
+
+.heading {
+    margin: 1em 3em;
+    padding-top: 1em;
+    padding: 20px 0px
+}
+
+.heading > h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+.category-description {
+    font-size: 1.25em;
+}
+
+.category-name {
+    font-size: 1em;
+}
+
+.category-name > a {
+    text-decoration: none;
+    color: black;
+}
+
+.category-name > a:hover {
+    text-decoration: underline;
+}
+
+.category-image {
+    height: 275px;
+}
+
+.bg-grey {
+    background-color: #eee;
+}
+
+.bestseller-card > img {
+    height: 410px;
+}
+
+
+.bestseller-name {
+    display: none;
+    padding: 0.5em;
+    background-color: #040402;
+    border: none;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.bestseller-image:hover .bestseller-name {
+    display: block;
+}
+
+.logo{
+    display: block;
+    max-width: 50%;
+    max-height: 75px;
+}
+
+.sale{
+    width: 100%;
+}

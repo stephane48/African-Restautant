@@ -1,0 +1,35 @@
+footer {
+    background-color: #239d60;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2em;
+    padding-left: 3em;
+}
+
+.quick-links > ul > li {
+    list-style: none;
+    padding: 0.5em;
+}
+
+.quick-links > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media {
+    padding-top: 1em;
+}
+
+.quick-links > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+footer > h1 {
+    text-transform: uppercase;
+    grid-row: 1;
+}
+
+footer > div {
+    grid-row: 1;
+}

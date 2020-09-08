@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+nav {
+    background-color: #239d60;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+nav > header {
+    grid-row: 1;
+}
+
+
+nav > header > h1 > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav > header > h1 {
+    text-transform: uppercase;
+    padding: 0.75em 5em;
+}
+
+nav > ul {
+    align-items: center;
+    grid-row: 1;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+nav > ul > li {
+    float: left;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > .nav-links > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+}
+
+
+footer {
+    background-color: #239d60;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 2em;
+}
+
+footer > h1 {
+    text-transform: uppercase;
+    grid-row: 1;
+}
+
+footer > div {
+    grid-row: 1;
+}
+
